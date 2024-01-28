@@ -1,25 +1,25 @@
-package com.example.coleco_llector.logic;
+package com.example.coleco_collector.logic;
 
 
 import java.util.ArrayList;
 
 
 public class Collection {
-    private ArrayList<Game> mycollection;
+    private ArrayList<Game> collectionList;
 
 
     public Collection() {
-        mycollection = new ArrayList<>();
+        new Collection();
     }
 
     public void addGame(String name, int date, Boolean boxed) {
         Game newgame = new Game(name, date, boxed);
-        mycollection.add(newgame);
+        collectionList.add(newgame);
         return;
     }
 
     public void printCollection() {
-        for (Game game : mycollection) {
+        for (Game game : collectionList) {
             System.out.println(game.getTitle());
         }
         return;
@@ -32,7 +32,7 @@ public class Collection {
  */
     public Game returnGameinCollection(String title)
     {
-        for (Game game : mycollection){
+        for (Game game : collectionList){
             if (game.getTitle()==title){
                 return game;
             }

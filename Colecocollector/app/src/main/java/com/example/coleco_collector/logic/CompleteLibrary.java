@@ -1,16 +1,15 @@
-package com.example.coleco_llector.logic;
+package com.example.coleco_collector.logic;
 
+import java.util.ArrayList;
 
 public class CompleteLibrary
 {
-    // instance variables - replace the example below with your own
-    private Game[] fullLibrary;
-    private int amountofgames;
+    private ArrayList<Game> libraryList;
 
-    public CompleteLibrary(int gamesinlibrary)
+
+    public CompleteLibrary()
     {
-        amountofgames = gamesinlibrary;
-        fullLibrary= new Game[amountofgames];
+       myLibrary = new CompleteLibrary();
     }
 
 
