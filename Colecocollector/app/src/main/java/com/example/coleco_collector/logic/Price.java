@@ -1,4 +1,4 @@
-package com.example.coleco_llector.logic;
+package com.example.coleco_collector.logic;
 
 
 public class Price
@@ -11,7 +11,7 @@ public class Price
     }
     public int sampleMethod(int y)
     {
-        // put your code here
-        return x + y;
+
+        return x;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.coleco_llector.logic;
+package com.example.coleco_collector.logic;
 
 
 public class Game
