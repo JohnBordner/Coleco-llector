@@ -4,22 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.coleco_collector.logic.ColecoLibrary;
-
-public class MainActivity2 extends AppCompatActivity {
+public class Library extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-
-        ColecoLibrary myLibrary = new ColecoLibrary();
-
-
-
+        setContentView(R.layout.activity_library);
     }
-
-
-
-
 }
