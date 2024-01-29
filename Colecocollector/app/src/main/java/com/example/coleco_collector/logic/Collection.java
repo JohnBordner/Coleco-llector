@@ -8,12 +8,13 @@ public class Collection {
     private ArrayList<Game> collectionList;
 
 
-    public Collection() {
-        new Collection();
+    public void Collection() {
+        collectionList = new ArrayList<Game>();
+        return;
     }
 
-    public void addGame(String name, int date, Boolean boxed) {
-        Game newgame = new Game(name, date, boxed);
+    public void addGame(String name, int date) {
+        Game newgame = new Game(name, date);
         collectionList.add(newgame);
         return;
     }
@@ -24,12 +25,12 @@ public class Collection {
         }
         return;
     }
-/*
+
     public ArrayList<Game> returnCollection() {
-        return mycollection;
+        return collectionList;
     }
 
- */
+
     public Game returnGameinCollection(String title)
     {
         for (Game game : collectionList){

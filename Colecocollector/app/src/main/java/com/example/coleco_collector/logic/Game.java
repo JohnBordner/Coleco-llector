@@ -5,27 +5,21 @@ public class Game
 {
     private String title;
     private int year;
-    private Boolean cib;
     
 
 
-    public Game(String name, int date, Boolean boxed)
+    public Game(String name, int date)
     {
         title= name;
         year = date;
-        cib = boxed;
     }
     public String getTitle()
     {
-        return title;
+        return this.title;
     }
     public int getYear()
     {
-        return year;
+        return this.year;
     }
-    public Boolean getCIB()
-    {
 
-        return cib;
-    }
 }
